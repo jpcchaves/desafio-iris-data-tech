@@ -5,13 +5,13 @@ import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "./styles/global-style";
 import { theme } from "./styles/theme";
 // Components
-import App from "./App";
+import Header from "./components/Header";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-      <App />
+      <Header/>
       <GlobalStyles />
     </ThemeProvider>
   </React.StrictMode>
