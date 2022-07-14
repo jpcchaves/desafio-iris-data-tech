@@ -5,7 +5,7 @@ export const Navbar = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3rem 2rem;
+  padding: 2rem 2rem;
 
   .img_wrapper {
     height: 100%;
@@ -22,6 +22,9 @@ export const Navbar = styled.nav`
     ul li a {
       color: ${theme.colors.white};
       text-decoration: none;
+      text-transform: uppercase;
+      font-weight: bold;
+      transition: 0.3s ease-in-out;
     }
 
     ul li a:hover {
@@ -30,13 +33,19 @@ export const Navbar = styled.nav`
 
     .button {
       background-color: ${theme.colors.redColor};
+      cursor: pointer;
       padding: 9px 26px;
+      transition: 0.3s ease-in-out;
     }
 
     .button a {
       text-decoration: none;
       font-weight: bolder;
       color: ${theme.colors.white};
+    }
+
+    .button:hover {
+      background-color: #c73036;
     }
   `}
 
