@@ -7,6 +7,7 @@ import { GlobalStyles } from "./styles/global-style";
 import { theme } from "./styles/theme";
 // Components
 import Header from "./components/Header";
+import Home from "./pages/home";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -14,7 +15,7 @@ root.render(
     <ThemeProvider theme={theme}>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Header />} />
+          <Route path="/" element={<Home />} />
         </Routes>
       </BrowserRouter>
       <GlobalStyles />
